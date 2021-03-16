@@ -1,0 +1,191 @@
+html {
+    height: 100%;
+    -moz-background: radial-gradient(circle, #fff, #ccc);
+    -op-background: radial-gradient(circle, #fff, #ccc);
+    -ms-background: radial-gradient(circle, #fff, #ccc);
+    -webkit-background: radial-gradient(circle, #fff, #ccc);
+}
+
+#container {
+    height: 600px;
+    width: 750px;
+    background-color: #9002EA;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px 0px #009de4;
+    position: relative;
+    -webkit- box-shadow: 4px 4px 0px 0px #009de4;
+    -moz- box-shadow: 4px 4px 0px 0px #009de4;
+    -ms- box-shadow: 4px 4px 0px 0px #009de4;
+    -op- box-shadow: 4px 4px 0px 0px #009de4;
+}
+
+#score {
+    background-color: #F1FF92;
+    color: #888E5F;
+    padding: 10px;
+    position: absolute;
+    left: 700px;
+    -op-box-shadow: 0px 4px 0px #9da853;
+    -moz-box-shadow: 0px 4px 0px #9da853;
+    -ms-box-shadow: 0px 4px 0px #9da853;
+    -webkit-box-shadow: 0px 4px 0px #9da853;
+}
+
+#correct {
+    position: absolute;
+    left: 260px;
+    background-color: #42e252;
+    color: white;
+    padding: 11px;
+    display: none;
+}
+
+#wrong {
+    position: absolute;
+    left: 250px;
+    background-color: #de401a;
+    color: white;
+    padding: 11px;
+    display: none;
+}
+
+#fruitsContainer {
+    width: 650px;
+    height: 400px;
+    margin: 50px auto 10px auto;
+    background-color: white;
+    -op-box-shadow: 0px 4px #535aa8;
+    -moz-box-shadow: 0px 4px #535aa8;
+    -ms-box-shadow: 0px 4px #535aa8;
+    -webkit-box-shadow: 0px 4px #535aa8;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+#instruction {
+    width: 400px;
+    height: 50px;
+    background-color: #8481D9;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 45px;
+    -op-box-shadow: 0px 4px #8153a8;
+    -ms-box-shadow: 0px 4px #8153a8;
+    -moz-box-shadow: 0px 4px #8153a8;
+    -webkit-box-shadow: 0px 4px #8153a8;
+}
+
+#choices {
+
+    width: 450px;
+    height: 100px;
+    margin: 5px auto;
+}
+
+.box {
+    width: 85px;
+    height: 85px;
+    background-color: white;
+    float: left;
+    margin-right: 36px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -op-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+.box:hover,
+#startreset:hover {
+    background-color: #9C89F6;
+    color: white;
+    box-shadow: 0px 4px #6b54d3;
+    -moz-box-shadow: 0px 4px #6b54d3;
+    -op-box-shadow: 0px 4px #6b54d3;
+    -ms-box-shadow: 0px 4px #6b54d3;
+    /* put this in coment on safari*/
+}
+
+.box:active,
+#startreset:active {
+    box-shadow: 0px 0px #6b54d3;
+    top: 4px;
+
+}
+
+#box4 {
+    margin-right: 0;
+}
+
+#startreset {
+    width: 78px;
+    padding: 5px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -op-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+#trialsleft {
+    width: 80px;
+    padding: 10px;
+    position: absolute;
+    /*    top: 400px;*/
+    top: 5px;
+    left: 5px;
+    background-color: rgba(181, 235, 36, 0.8);
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -op-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+#gameOver {
+
+    height: 200px;
+    width: 500px;
+    background: linear-gradient(#F3CA68, #F3786C);
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 170px;
+    left: 145px;
+    display: none;
+}
+
+.life {
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+}
+
+.fruit {
+    display: none;
+    position: absolute;
+}
